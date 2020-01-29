@@ -1,66 +1,41 @@
-# Credit Card API
-
-## Download JAR
-* https://github.com/csys-fresher-batch-2019/bankapp-megala/releases/download/v1.1/bank-1.0.0-SNAPSHOT.jar
-
-### API 1: Validate Credit Card 
-```java
-
-import creditcard.CreditCard;
-import creditcard.CreditCardService;
-....
-
-CreditCard card = new CreditCard();
-card.setCreditCardNo(1234567890123456L);
-card.setExpiryDate(LocalDate.parse("2020-12-31"));
-card.setCVV(123);
+#  Projects
 
 
-try {
-	boolean result = CreditCardService.validateCreditCard(card);
-	System.out.pr
-} catch (Exception e) {
-	e.printStackTrace();
-}
-```
+## Bank App
+* Validate Credit Card API ( Card No , expiryDate, cvv )
+* Validate Credit Card API ( Card No , pin )
+* Pay Bill Online ( Card No , expiry date, cvv)
+* Pay Bill at Merchant Billing Counter ( Card No , PIN )
 
-### API 2: Pay Amount to Credit Card (Online)
-```java
+## Wallet App
+* Pay via wallet ( Mobile No, PIN , amount)
 
-import creditcard.CreditCard;
-import creditcard.CreditCardService;
-....
+## SuperMarket App
+* Pay Bill via Credit Card Online
+* Pay Bill via Credit Card at Merchant Counter
+* Pay Bill via Wallet
 
-CreditCard card = new CreditCard();
-card.setCreditCardNo(1234567890123456L);
-card.setExpiryDate(LocalDate.parse("2020-12-31"));
-card.setCVV(123);
-int amount = 1000;
-String comments = "GowthamRaj - SuperMarket Bill";
-try {
-	boolean result = CreditCardService.payAmount(card , amount, comments );
-	System.out.println(result);
-} catch (Exception e) {
-	e.printStackTrace();
-}
-```
-### API 3: Pay Amount using Credit Card (Billing Counter)
-* Using Credit Card PIN
-```java
+## Online Course Fee Payment 
+*  Pay Course Fees ( CardNo, expiry date, fees )
 
-import creditcard.CreditCard;
-import creditcard.CreditCardService;
-....
+## Bus/Train Ticket Booking
+*  Pay via Card 
+*  Pay via Wallet
 
-CreditCard card = new CreditCard();
-card.setCreditCardNo(1234567890123456L);
-card.setPin(1234);
-int amount = 1000;
-String comments = "GowthamRaj - SuperMarket Bill";
-try {
-	boolean result = CreditCardService.payAmount(card , amount, comments );
-	System.out.println(result);
-} catch (Exception e) {
-	e.printStackTrace();
-}
-```
+## HRMS - Payroll Processing
+* Pay salary to Bank Account ( accountNo, amount )
+
+## Doctor Fees Payment
+* Pay fees via Credit Card Swipe ( cardNo, pin)
+
+## Matrimonial Plan Subscription
+* Subscribe Plan/Renew plan => Pay amount online via Credit Card ( cardNo, expiryDate, cvv )
+
+## Buy Books from BookShelf
+* Pay via Credit Card online
+
+## Car Sales
+* Purchase a car using Loan 
+
+## 
+

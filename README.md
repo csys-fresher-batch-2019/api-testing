@@ -1,7 +1,7 @@
 # Credit Card API
 
 ## Download JAR
-* url
+* https://github.com/csys-fresher-batch-2019/bankapp-megala/releases/download/v1.0/bank-1.0.0-SNAPSHOT.jar
 
 ### API 1: Register Card 
 ```java

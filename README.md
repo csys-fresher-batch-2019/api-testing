@@ -5,7 +5,7 @@
 
 ### API 1: Register Card 
 ```java
-CreditCard card = new CreditCard();
+		CreditCard card = new CreditCard();
 		card.setAccNo(100);
 		card.setCreditCardNo(1234567890123456L);
 		card.setExpiryDate(LocalDate.parse("2020-12-31"));
